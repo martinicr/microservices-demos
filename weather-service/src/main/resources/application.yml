@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+#logging:
+#  level:
+#    org.springframework.cloud.consul: DEBUG
+
+openweathermap:
+  api:
+    url: http://api.openweathermap.org
+    key: c559e941a0da745aa0139aef272bf16c

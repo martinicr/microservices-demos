@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    initialize: true
+  data:
+    jpa:
+      repositories:
+        enabled: true
+
+#logging:
+#  level:
+#    org.springframework.cloud.consul: DEBUG

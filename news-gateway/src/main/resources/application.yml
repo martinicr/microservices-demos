@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+#logging:
+#  level:
+#    org.springframework.cloud.consul: DEBUG
